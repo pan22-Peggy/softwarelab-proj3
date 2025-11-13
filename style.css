@@ -1,0 +1,50 @@
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  text-align: center;
+}
+
+.overlay img {
+  max-width: 1000px; /* 🖼↔️ Image Width */
+  max-height: 1000px; /* 🖼↕️ Image Height */
+  display: block;
+  margin: 0 auto;
+}
+
+.overlay p {
+  margin: 0;
+  font-family: customfont; 
+  font-size: 60px; /* 🔠 Font Size */
+  color: white; /* 🔠 Font Color */
+}
+
